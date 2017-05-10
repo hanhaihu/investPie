@@ -1,0 +1,25 @@
+/**
+ *所有字体的定义
+ */
+
+$fontFamily_PingFang:PingFang;
+$fontFamily_YaHei:Microsoft YaHei;
+
+/**
+ *宽度相关的基本尺寸，用于计算rem
+ */
+
+$psd_width:750px; //psd图的宽度
+$minSize:12.0; //最小的font-size,android下某些版本最小只能是12px
+
+/**
+ *根据psd图计算出rem单位
+ */
+
+@function measure($n) {
+    @return $n/($psd_width/320.0 * $minSize)* 1rem;
+}
+
+@function measurePercent($n, $m) {
+    @return $n / $m * 100%;
+}

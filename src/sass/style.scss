@@ -1,0 +1,70 @@
+@import "./commons/variables";
+
+/*这是安全保障部分独立的样式*/
+
+.insurance .page {
+    background-image: url("../images/background.png");
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 100% 100%;
+}
+
+.insurance .page .arrow {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    width: 50px;
+    height: 52.5px;
+    margin-left: -25px;
+    background: url(../images/slide.png) no-repeat;
+    background-size: 50px auto;
+    opacity: 0;
+}
+
+.insurance .page:first-child .column {
+    position: absolute;
+    left: 50%;
+    top: 70px;
+    width: 167.6px;
+    height: 157.3px;
+    margin-left: -83.8px;
+    background: url(../images/column.png) no-repeat;
+    background-size: 167.6px auto;
+    opacity: 1;
+}
+
+.insurance .page:first-child .promise {
+    position: absolute;
+    left: 50%;
+    bottom: 200px;
+    width: 167.6px;
+    ;
+    margin-left: -83.8px;
+    font-family: PingFangSC-Medium, sans-serif;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+.insurance .page:first-child ul {
+    position: absolute;
+    left: 10.6%;
+    bottom: 80px;
+}
+
+.insurance .page:first-child li {
+    font-size: 15px;
+    list-style: disc;
+    color: #89abf4;
+    line-height: 36px;
+}
+
+input::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #b5b5b5;
+    font-family: "Microsoft YaHei";
+}
+
+input {
+    font-family: "Microsoft YaHei";
+}
