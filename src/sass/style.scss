@@ -12,36 +12,35 @@
 .insurance .page .arrow {
     position: absolute;
     left: 50%;
-    bottom: 10px;
-    width: 50px;
-    height: 52.5px;
-    margin-left: -25px;
+    bottom: measure(30px);
+    width: measure(100px);
+    height: measure(105px);
+    margin-left: measure(-50px);
     background: url(../images/slide.png) no-repeat;
-    background-size: 50px auto;
+    background-size:100% 100%;
     opacity: 0;
 }
 
 .insurance .page:first-child .column {
     position: absolute;
     left: 50%;
-    top: 70px;
-    width: 167.6px;
-    height: 157.3px;
-    margin-left: -83.8px;
+    top: measure(213px);
+    width: measure(503px);
+    height: measure(472px);
+    margin-left: measure(-503px/2);
     background: url(../images/column.png) no-repeat;
-    background-size: 167.6px auto;
+    background-size: measure(472px) auto;
     opacity: 1;
 }
 
 .insurance .page:first-child .promise {
     position: absolute;
     left: 50%;
-    bottom: 200px;
-    width: 167.6px;
-    ;
-    margin-left: -83.8px;
+    bottom: measure(446px);
+    width: measure(270px);
+    margin-left: measure(-135px);
     font-family: PingFangSC-Medium, sans-serif;
-    font-size: 20px;
+    font-size: measure(40px);
     color: white;
     text-align: center;
 }
@@ -49,14 +48,15 @@
 .insurance .page:first-child ul {
     position: absolute;
     left: 10.6%;
-    bottom: 80px;
+    bottom: measure(231px);
 }
 
 .insurance .page:first-child li {
-    font-size: 15px;
+    font-size: measure(26px);
     list-style: disc;
     color: #89abf4;
-    line-height: 36px;
+    // margin-bottom: measure(30px);
+    line-height: measure(36px);
 }
 
 input::-webkit-input-placeholder {
