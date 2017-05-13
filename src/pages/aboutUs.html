@@ -1,10 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <title>关于我们</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/commons/entry.css">
+    <link rel="stylesheet" href="../css/slide.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <!--custom style-->
+    <style>
+    .current .title {
+        -webkit-animation: slideToTop .8s ease both;
+    }
+    
+    .current .subtitle {
+        -webkit-animation: slideToTop .8s 0.3s ease both;
+    }
+    
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    </style>
 </head>
-<body>
 
+<body class="relation">
+    <div class="page-wrap">
+        <div class="page">
+            <div class="column colRelated"></div>
+            <div class="promise relOne">A股上市公司三元达旗下产品</div>
+            <p class="stock">股票代码 002417</p>
+            <div class="explain">
+                江苏深南互联网金融信息服务有限公司由红岭资本投资设立。注册资本人命币,是一家100%上市公司 控股的互联网金融平台。为广大用户提供多元化的金融信息务和产品。
+            </div>
+            <div class="arrow"></div>
+        </div>
+        <div class="page">
+            <div class="flgOne">
+                <div class="sign signOne"></div>
+                <p class="caption capOne">优质资产配置</p>
+                <p class="desc infoOne">提供包括供应链金融，提供包括供应链金融提供包括供应链金融提供包括供应链金融。</p>
+            </div>
+            <div class="flgTwo">
+                <div class="sign signTwo"></div>
+                <p class="caption capTwo">全方位安全保障</p>
+                <p class="desc infoTwo">多层风控安全保障体系，十道审核工序,24小时不断严格监控。</p>
+            </div>
+            <div class="flgThree">
+                <div class="sign signThree"></div>
+                <p class="caption capThree">服务优质 流程便捷</p>
+                <p class="desc infoThree">APP客服端，WEB全平台交易，强大的客服团队随时随地 为你服务</p>
+            </div>
+            <div class="arrow"></div>
+        </div>
+        <div class="page">
+            <div class="column">
+                <img id="ceo" src="../images/CEO.png" alt="">
+            </div>
+            <div class="promise">陈先生&nbsp&nbsp<span>chenxs</span></div>
+            <div class="shape"></div>
+            <p class="position">首席执行官／执行董事</p>
+            <p>
+                23岁进入金融证券行业，在招商和长江证券等金融机构均有从业 经历。曾在著名私募证券投资公司担任助理研究员，研究员、基 金经理等职位, 曾在著名私募证券投资公司担任助理研究员，研究员、基 金经理等职位, 曾在著名私募证券投资公司担任助理研究员。
+            </p>
+            <div class="slideContainer">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="../images/carousel.png" alt="" /></div>
+                        <div class="swiper-slide"><img src="../images/carousel.png" alt="" /></div>
+                        <div class="swiper-slide"><img src="../images/carousel.png" alt="" /></div>
+                        <div class="swiper-slide"><img src="../images/carousel.png" alt="" /></div>
+                    </div>
+                </div>
+            </div>
+            <div class="arrow"></div>
+        </div>
+        <div class="page">
+            <div class="item">
+                <div class="icon iconOne"><img src="../images/related.png" alt=""></div>
+                <p class="concatOne">客服电话&nbsp&nbsp<span>400-888-7772(长途免费)</span></p>
+            </div>
+            <div class="item">
+                <div class="icon iconTwo"><img src="../images/opertion.png" alt=""></div>
+                <p class="concatTwo">商业合作&nbsp&nbsp<span>0513-89128760</span></p>
+            </div>
+            <div class="item">
+                <div class="icon iconThree"><img src="../images/email.png" alt=""></div>
+                <p class="concatThree">客服邮箱&nbsp&nbsp<span>kefu@zbenjia.com</span></p>
+            </div>
+            <div class="item">
+                <div class="icon iconFour"><img src="../images/address.png" alt=""></div>
+                <p class="concatFour"><em>公司地址&nbsp&nbsp</em><span class="itemSpan">江苏省南通市崇川区青年路81号 南通大饭店财富大厦1705室</span></p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="../js/zepto.min.js"></script>
+    <script src="../js/PageSlider.js"></script>
+    <script src="../js/swiper.jquery.min.js"></script>
+    <script>
+    new PageSlider({
+        pages: $('.page-wrap .page'),
+        gestureFollowing: true
+    });
+
+    $(function() {
+        var mySwiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            slidesPerView: 3,
+            paginationClickable: true,
+            spaceBetween: 15,
+            onSlideChangeEnd: function(swiper) {},
+            onClick: function(swiper) {
+                if (swiper.clickedIndex == 0) {
+                    //首幅图片点击时不进行切换
+                    return;
+                } else {
+                    document.getElementById("ceo").src = "../images/CEO" + (swiper.clickedIndex + 1) + ".png";
+                }
+            }
+        });
+
+    });
+    </script>
 </body>
+
 </html>
