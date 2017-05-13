@@ -74,6 +74,17 @@
                 width: 100%;
                 height: 100%;
             }
+            float:left;
+            position: relative;
+            top:measure(8px);
+        }
+        em {
+            display: inline-block;
+            width: measure(570px);
+            margin-left: measure(25px);
+            float: left;
+            font-family: PingFangSC-Light, sans-serif;
+            font-size: measure(26px);
         }
     }
 }
@@ -125,6 +136,17 @@
                 width: 100%;
                 height: 100%;
             }
+            float:left;
+            position: relative;
+            top:measure(8px);
+        }
+        em {
+            display: inline-block;
+            width: measure(570px);
+            margin-left: measure(25px);
+            float: left;
+            font-family: PingFangSC-Light, sans-serif;
+            font-size: measure(26px);
         }
     }
 }
@@ -176,6 +198,17 @@
                 width: 100%;
                 height: 100%;
             }
+            float:left;
+            position: relative;
+            top:measure(8px);
+        }
+        em {
+            display: inline-block;
+            width: measure(570px);
+            margin-left: measure(25px);
+            float: left;
+            font-family: PingFangSC-Light, sans-serif;
+            font-size: measure(26px);
         }
     }
 }
@@ -227,6 +260,17 @@
                 width: 100%;
                 height: 100%;
             }
+            float:left;
+            position: relative;
+            top:measure(8px);
+        }
+        em {
+            display: inline-block;
+            width: measure(570px);
+            margin-left: measure(25px);
+            float: left;
+            font-family: PingFangSC-Light, sans-serif;
+            font-size: measure(26px);
         }
     }
 }
@@ -583,15 +627,15 @@ input {
 }
 
 .current .proOne {
-    -webkit-animation: bounce 1.5s 1s ease 1;
-    animation: bounce 1.5s 1s ease 1;
+    -webkit-animation: bounce 1.5s ease 1;
+    animation: bounce 1.5s ease 1;
     -webkit-transform-origin: center bottom;
     transform-origin: center bottom;
 }
 
 .current .InDescTwo {
-    -webkit-animation: slideInRight 1.5s 1s ease 1;
-    animation: slideInRight 1.5s 1s ease 1;
+    -webkit-animation: slideInRight 1.5s ease 1;
+    animation: slideInRight 1.5s ease 1;
     -webkit-transform-origin: center bottom;
     transform-origin: center bottom;
 }
@@ -600,18 +644,18 @@ input {
 /*第二屏*/
 
 .current .colInTwo {
-    -webkit-animation: bounceInRight 1s 1, rotate 1s 1s linear infinite;
-    animation: bounceInRight 1s 1, rotate 1s 1s linear infinite;
+    -webkit-animation: bounceInRight 1s 1;
+    animation: bounceInRight 1s 1;
 }
 
 .current .proTwo {
-    -webkit-animation: shake 1s 1;
-    animation: shake 1s 1;
+    -webkit-animation: shake 1.5s 1;
+    animation: shake 1.5s 1;
 }
 
 .current .InDescThree {
-    -webkit-animation: slideInUp 1s 1;
-    animation: slideInUp 1s 1;
+    -webkit-animation: slideInUp 1.5s 1;
+    animation: slideInUp 1.5s 1;
 }
 
 
@@ -681,18 +725,18 @@ input {
 /*第二屏*/
 
 .current .signOne {
-    -webkit-animation: slideInLeft 1s 1;
-    animation: slideInLeft 1s 1;
+    -webkit-animation: slideInLeft 1s ease 1;
+    animation: slideInLeft 1s ease 1;
 }
 
 .current .capOne {
-    -webkit-animation: fadeInUp 2s 0.5s ease 1;
-    animation: fadeInUp 2s 0.5s ease 1;
+    -webkit-animation: fadeInUp 1s ease 1;
+    animation: fadeInUp 1s ease 1;
 }
 
 .current .infoOne {
-    -webkit-animation: slideInRight 2s 0.5s 1;
-    animation: slideInRight 2s 0.5s 1;
+    -webkit-animation: slideInRight 1s ease 1;
+    animation: slideInRight 1s ease 1;
 }
 
 .current .signTwo {
@@ -701,28 +745,28 @@ input {
 }
 
 .current .capTwo {
-    -webkit-animation: fadeInUp 2s 0.5s ease 1;
-    animation: fadeInUp 2s 0.5s ease 1;
+    -webkit-animation: fadeInUp 1s ease 1;
+    animation: fadeInUp 1s ease 1;
 }
 
 .current .infoTwo {
-    -webkit-animation: slideInLeft 2s 0.5s 1;
-    animation: slideInLeft 2s 0.5s 1;
+    -webkit-animation: slideInLeft 1s ease 1;
+    animation: slideInLeft 1s ease 1;
 }
 
 .current .signThree {
-    -webkit-animation: slideInLeft 1s 1;
-    animation: slideInLeft 1s 1;
+    -webkit-animation: slideInLeft 1s ease 1;
+    animation: slideInLeft 1s ease 1;
 }
 
 .current .capThree {
-    -webkit-animation: fadeInUp 2s 0.5s ease 1;
-    animation: fadeInUp 2s 0.5s ease 1;
+    -webkit-animation: fadeInUp 1s ease 1;
+    animation: fadeInUp 1s ease 1;
 }
 
 .current .infoThree {
-    -webkit-animation: slideInRight 2s 0.5s 1;
-    animation: slideInRight 2s 0.5s 1;
+    -webkit-animation: slideInRight 1s ease 1;
+    animation: slideInRight 1s ease 1;
 }
 
 
@@ -1345,7 +1389,7 @@ input {
 @-webkit-keyframes rotate {
     0% {
         -webkit-transform: rotate(0deg);
-        transform: rotateY(0deg)
+        transform: rotate(0deg)
     }
     100% {
         -webkit-transform: rotate(360deg);
@@ -1356,7 +1400,7 @@ input {
 @keyframes rotate {
     0% {
         -webkit-transform: rotate(0deg);
-        transform: rotateY(0deg)
+        transform: rotate(0deg)
     }
     100% {
         -webkit-transform: rotate(360deg);

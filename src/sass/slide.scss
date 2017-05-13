@@ -20,6 +20,19 @@ body {
     height: 100%;
     -webkit-backface-visibility: hidden;
     -webkit-perspective: 1000;
+    div,
+    ul,
+    p {
+        visibility: hidden;
+    }
+}
+
+.page.current {
+    div,
+    ul,
+    p {
+        visibility: visible;
+    }
 }
 
 
@@ -114,7 +127,6 @@ body {
 .current .arrow-h {
     -webkit-animation: swipeMoveLeft 1.5s 1s ease infinite;
 }
-
 
 
 /*上滑提示*/
