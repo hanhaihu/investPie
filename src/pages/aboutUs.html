@@ -124,12 +124,14 @@
     <script src="../js/PageSlider.js"></script>
     <script src="../js/swiper.jquery.min.js"></script>
     <script>
-    new PageSlider({
-        pages: $('.page-wrap .page'),
-        gestureFollowing: true
-    });
-
     $(function() {
+
+        new PageSlider({
+            pages: $('.page-wrap .page'),
+            gestureFollowing: true
+        });
+
+
         var mySwiper = new Swiper('.swiper-container', {
             pagination: '.swiper-pagination',
             slidesPerView: 3,

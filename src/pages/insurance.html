@@ -68,10 +68,12 @@
     <script src="../js/zepto.min.js"></script>
     <script src="../js/PageSlider.js"></script>
     <script>
-    new PageSlider({
-        pages: $('.page-wrap .page'),
-        gestureFollowing: true
-    });
+    $(function() {
+        new PageSlider({
+            pages: $('.page-wrap .page'),
+            gestureFollowing: true
+        });
+    })
     </script>
 </body>
 
