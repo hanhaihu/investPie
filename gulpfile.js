@@ -25,7 +25,7 @@ gulp.task('clean', function() {
 gulp.task('rename', function() {
     return gulp.src(dist + '/pages/*.html')
         .pipe(rename({
-            extname: '.php'
+            extname: '.jsp'
         }))
         .pipe(gulp.dest(dist));
 });
