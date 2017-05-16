@@ -425,8 +425,8 @@
         margin-bottom: measure(10px);
     }
     img {
-        width: 100%;
-        height: 100%;
+        width: measure(180px);
+        height: measure(160px);
     }
     .position {
         font-family: PingFangSC-Medium, sans-serif;
@@ -449,6 +449,7 @@
     .slideContainer {
         height: 100px;
         padding: 0 measure(40px);
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
     }
 }
 
@@ -783,33 +784,33 @@ input {
 }
 
 .current .iconTwo {
-    -webkit-animation: slideInLeft 0.9s  1;
-    animation: slideInLeft 0.9s  1;
+    -webkit-animation: slideInLeft 0.9s 1;
+    animation: slideInLeft 0.9s 1;
 }
 
 .current .concatTwo {
-    -webkit-animation: slideInRight 1.1s  1;
-    animation: slideInRight 1.1s  1;
+    -webkit-animation: slideInRight 1.1s 1;
+    animation: slideInRight 1.1s 1;
 }
 
 .current .iconThree {
-    -webkit-animation: slideInLeft 1.3s  1;
-    animation: slideInLeft 1.3s  1;
+    -webkit-animation: slideInLeft 1.3s 1;
+    animation: slideInLeft 1.3s 1;
 }
 
 .current .concatThree {
-    -webkit-animation: slideInRight 1.5s  1;
-    animation: slideInRight 1.5s  1;
+    -webkit-animation: slideInRight 1.5s 1;
+    animation: slideInRight 1.5s 1;
 }
 
 .current .iconFour {
-    -webkit-animation: slideInLeft 1.7s  1;
-    animation: slideInLeft 1.7s  1;
+    -webkit-animation: slideInLeft 1.7s 1;
+    animation: slideInLeft 1.7s 1;
 }
 
 .current .concatFour {
-    -webkit-animation: slideInRight 1.9s  1;
-    animation: slideInRight 1.9s  1;
+    -webkit-animation: slideInRight 1.9s 1;
+    animation: slideInRight 1.9s 1;
 }
 
 @-webkit-keyframes slideInLeft {

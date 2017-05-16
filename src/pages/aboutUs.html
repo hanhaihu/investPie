@@ -134,17 +134,12 @@
 
         var mySwiper = new Swiper('.swiper-container', {
             pagination: '.swiper-pagination',
-            slidesPerView: 4,
+            slidesPerView: 3,
             paginationClickable: true,
-            spaceBetween: 15,
+            spaceBetween: 5,
             onSlideChangeEnd: function(swiper) {},
             onClick: function(swiper) {
-                if (swiper.clickedIndex == 0) {
-                    //首幅图片点击时不进行切换
-                    return;
-                } else {
-                    document.getElementById("ceo").src = "../images/CEO" + (swiper.clickedIndex + 1) + ".png";
-                }
+                document.getElementById("ceo").src = "../images/CEO" + (swiper.clickedIndex + 1) + ".png";
             }
         });
 
